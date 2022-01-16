@@ -347,7 +347,7 @@ void main(){
    //  uv.x *= dithering2;
   color = mix(color, vec3(1.), spiral);
   // color *= spiral + wiggly(uv.x + vTime * .05, uv.y + vTime * .05, 2., 6., 0.05);
-  color = vec3(spiral);
+  color = vec3(spiral, 0., 0.);
 
  gl_FragColor = vec4(color, alpha) ;
 

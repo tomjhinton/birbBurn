@@ -386,7 +386,7 @@ void main(){
       float square6 = stroke(rectSDF(vec2(vUv.x, vUv.y -.3), vec2 (1., .1)), .3, .8);
 
 
-    uvRipple(uv4, 2.);
+    uvRipple(color.rg, 2.);
 
     // vec3 color2 = vec3(uv2.x, uv2.y, 1.);
     // vec3 color3 = vec3(uv3.y, roteC.x, 1.);

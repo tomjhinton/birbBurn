@@ -437,8 +437,9 @@ void main(){
    // color *=  tex.rgb;
    // color +=  tex.g;
    // color +=  tex.b;
-   // tex.r = 1.;
+   color.r = 1.;
    // color = mix(color, tex.rgb, uv5.y +.5);
+
 
 
 

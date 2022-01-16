@@ -330,8 +330,8 @@ void main(){
   // uv = tile(uv, 10. * uValueA + uValueB * roteA.x);
   uvRipple(uv, .2 );
   float circle = step(distance(vUv, vec2(.1)), .3 + wiggly(vUv.x + vTime * .05, vUv.y + vTime * .05, 4., 2., 0.05 ));
-  uv.x += cnoise(uv * 1000.);
-  uv.y += cnoise(roteA * 2000.);
+  uv.x += cnoise(uv * 100.);
+  uv.y += cnoise(roteA * 200.);
 
   vec2 rote = rotateUV(vUv, vec2(.5), PI * vTime * .05);
 
@@ -351,9 +351,10 @@ void main(){
 
   float r = stroke(triangleGrid(uv3, 0.05, 0.000000005,0.001), .5, .5);
   float g = triangleGrid(uv6, 0.02, 0.00000005,0.001);
-  vec3 color = vec3(1. );
+  vec3 color = vec3(uv.x, uv.y, 1. );
 
   color+= uv.x;
+    color+= uv.y;
   // color += cnoise()
   // vec3(dither2x2(uv, uv.x *sin(vTime)), dither4x4(uv, uv.y*cos(vTime)), dither8x8(uv, cnoise(roteC* 4.)));
   // coswarp(color, 3. );

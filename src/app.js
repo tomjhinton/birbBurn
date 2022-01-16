@@ -141,7 +141,7 @@ const thoughtMaterial  = new THREE.ShaderMaterial({
 
 
 
-const bakedTexture = textureLoader.load('bake.jpg')
+const bakedTexture = textureLoader.load('bake2.jpg')
 
 
 bakedTexture.flipY = false
